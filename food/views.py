@@ -20,3 +20,7 @@ def random_number_max(request,max):
 def random_number_mixed(request,min_, max_):
     num = randint(min_, max_)
     return HttpResponse(f' Uzytkownik podal wartosci minimum  {min_} oraz maksimum {max_}. Wylosowano liczbe:{num}')
+
+def hello(request, name):
+    return HttpResponse(f'hello {name}!')
+
