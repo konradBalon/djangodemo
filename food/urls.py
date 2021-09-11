@@ -4,5 +4,6 @@ from food import views
 
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    # path('', views.index, name='index'),
+    path('random/', views.random_number),
 ]
